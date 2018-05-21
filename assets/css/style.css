@@ -113,6 +113,8 @@ img{
 }
 #HomeImage{
     float: left;
+    width: 160px;
+    height: 195px;
     padding: 0px;
     padding-top: 20px;
     padding-right: 20px;
@@ -122,8 +124,16 @@ p{
     padding-right: 20px;
     padding-left: 20px;
     color: #777777;
+    
 }
-
+span{
+    line-height: 25px;
+}
+span br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 10px; /* change this to whatever height you want it */
+ }
 body{
     background-image: url("../images/light_grey.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -144,6 +154,7 @@ form{
     margin-top: 4px;
     border-radius: 4px; 
     height: 25px;
+    
 }
 #message{
     height: 100px;
@@ -161,6 +172,20 @@ form{
     background-color: #ffffff;
     color:#4aaaa5 ;
     border: 2px solid #777777
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* color: rgb(230, 227, 227); */
+    opacity: 0.3; /*Firefox*/
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    /* color: rgb(230, 227, 227); */
+    opacity: 0.3;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    /* color: rgb(230, 227, 227); */
+    opacity: 0.3;
 }
 
 .imagename{
